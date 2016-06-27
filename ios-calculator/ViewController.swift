@@ -7,19 +7,31 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var outputLabel: UILabel!
+    
+    var btnSund: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let bath = NSBundle.mainBundle().pathForResource("btn", ofType: "wav")
+        let soundURL = NSURL(fileURLWithPath: bath!)
+        do {
+            try btnSund = AVAudioPlayer(contentsOfURL: soundURL)
+            btnSund.prepareToPlay()
+        }catch let err as NSError{
+            print(err.debugDescription)
+        }
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func pressedBoutton(btn: UIButton!){
+        btnSund.play()
     }
-
 
 }
 
