@@ -181,6 +181,9 @@
                                                     <constraint firstAttribute="width" constant="72" id="m65-I7-z9v"/>
                                                 </constraints>
                                                 <state key="normal" image="subtract"/>
+                                                <connections>
+                                                    <action selector="onSub:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NAd-hZ-idA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMP-MG-P8l">
                                                 <rect key="frame" x="87" y="0.0" width="72" height="72"/>
@@ -189,6 +192,9 @@
                                                     <constraint firstAttribute="width" constant="72" id="cnc-3i-GLQ"/>
                                                 </constraints>
                                                 <state key="normal" image="add"/>
+                                                <connections>
+                                                    <action selector="onCal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EMd-hu-ZFf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfk-Vp-I5I">
                                                 <rect key="frame" x="174" y="0.0" width="72" height="72"/>
@@ -213,6 +219,9 @@
                                                     <constraint firstAttribute="width" constant="72" id="hXr-61-wiW"/>
                                                 </constraints>
                                                 <state key="normal" image="divide"/>
+                                                <connections>
+                                                    <action selector="onDiv:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w2C-bw-nJr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKq-Uk-jvg">
                                                 <rect key="frame" x="87" y="0.0" width="72" height="72"/>
@@ -221,6 +230,9 @@
                                                     <constraint firstAttribute="width" constant="72" id="StN-JY-ufA"/>
                                                 </constraints>
                                                 <state key="normal" image="multiply"/>
+                                                <connections>
+                                                    <action selector="onMul:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jgW-9V-gov"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1G-wm-rrP">
                                                 <rect key="frame" x="174" y="0.0" width="72" height="72"/>
@@ -229,12 +241,15 @@
                                                     <constraint firstAttribute="height" constant="72" id="XgF-Is-2H3"/>
                                                 </constraints>
                                                 <state key="normal" image="equal"/>
+                                                <connections>
+                                                    <action selector="onEcu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Icq-Hg-l4H"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="66589" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjg-G0-lcR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjg-G0-lcR">
                                 <rect key="frame" x="149" y="86" width="268" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="asZ-Sz-Ehk"/>
@@ -262,10 +277,13 @@
                             <constraint firstAttribute="trailing" secondItem="USa-Nq-dvs" secondAttribute="trailing" id="vsk-5h-MfP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="Tjg-G0-lcR" id="Ho3-kz-RJ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="464" y="74"/>
+            <point key="canvasLocation" x="540" y="69"/>
         </scene>
     </scenes>
     <resources>
