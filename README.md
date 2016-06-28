@@ -1,3 +1,3 @@
 # ios-calculatore
 
-https://github.com/wesamswetat/ios-calculatore/edit/master/img/ScreenShot.png
+https://github.com/wesamswetat/ios-calculatore/img/ScreenShot.png
